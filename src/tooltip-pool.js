@@ -10,10 +10,10 @@ export default class TooltipPool {
         const id = this._generateNewTooltipId();
 
         const el = createTooltip(text);
-        el.classList.add('hidden');
         document.body.appendChild(el);
 
         const tooltip = new Tooltip(id, el);
+        tooltip.hide();
         this._tooltips[id] = tooltip;
         return tooltip;
     }

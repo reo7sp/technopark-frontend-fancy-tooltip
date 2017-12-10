@@ -7,7 +7,8 @@ export default function setup(rootEl) {
         const text = el.getAttribute('data-tooltip');
         const tooltip = tooltipPool.createNewTooltip(text);
 
-        el.addEventListener('mouseenter', () => tooltip.show(el.getBoundingClientRect()));
+        el.addEventListener('mouseenter', (e) => tooltip.show(e.pageX, e.pageY));
+        el.addEventListener('mousemove', (e) => tooltip.move(e.pageX, e.pageY));
         el.addEventListener('mouseleave', () => tooltip.hide());
     });
 }

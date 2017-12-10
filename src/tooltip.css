@@ -1,4 +1,33 @@
 .tooltip {
     position: absolute;
-    background: aquamarine;
+    transition: opacity 0.2s;
+    opacity: 1;
+    box-sizing: border-box;
+}
+
+.tooltip--shallow-hidden {
+    opacity: 0;
+}
+
+.tooltip--hidden {
+    display: none;
+}
+
+.tooltip__content {
+    background-color: #222;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px #444;
+    white-space: nowrap;
+}
+
+.tooltip__arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #222;
+    margin-top: -1px;
 }
