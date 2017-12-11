@@ -2,15 +2,14 @@ body {
     font-family: sans-serif;
     font-size: 16px;
     line-height: 24px;
-    margin: 0;
 }
 
-.container {
-    margin: 8px;
+.hidden {
+    display: none;
 }
 
 .all-width-image {
     margin-left: -8px;
-    width: calc(100% + 16px);
+    width: 100vw;
     height: auto;
 }

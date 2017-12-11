@@ -1,8 +1,9 @@
 import './global.css'
 import './tooltip.css'
 
-import setup from './setup';
+import TooltipManager from './tooltip-manager';
 
 window.onload = () => {
-    setup(document.body);
+    const manager = new TooltipManager();
+    manager.register(document.getElementById('app'));
 };
