@@ -37,5 +37,8 @@
 
 .tooltip__arrow--to-up {
     border-bottom: 8px solid #222;
-    /*margin-bottom: -1px;*/
+}
+
+.tooltip__arrow--hidden {
+    display: none;
 }

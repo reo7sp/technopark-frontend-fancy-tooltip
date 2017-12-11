@@ -69,10 +69,10 @@ export default class Tooltip {
         const arrowToUpY = -arrowHeight;
         this._arrowToDownEl.style.left = `${arrowX}px`;
         this._arrowToDownEl.style.top = `${arrowToDownY}px`;
-        this._arrowToDownEl.classList.toggle('hidden', !doShowArrowToDown);
+        this._arrowToDownEl.classList.toggle('tooltip__arrow--hidden', !doShowArrowToDown);
         this._arrowToUpEl.style.left = `${arrowX}px`;
         this._arrowToUpEl.style.top = `${arrowToUpY}px`;
-        this._arrowToUpEl.classList.toggle('hidden', doShowArrowToDown);
+        this._arrowToUpEl.classList.toggle('tooltip__arrow--hidden', doShowArrowToDown);
     }
 
     hide() {
